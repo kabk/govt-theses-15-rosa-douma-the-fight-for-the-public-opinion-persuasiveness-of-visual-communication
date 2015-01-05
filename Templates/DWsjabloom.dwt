@@ -29,7 +29,7 @@ body {
     <!-- end .header --></div>
   <div class="sidebar1">
     <ul class="nav">
-      <li><a href="../abstract.html"><img src="../a.abstract.png" width="192" height="67" /></a></li>
+      <li><a href="../index.html"><img src="../a.abstract.png" width="192" height="67" /></a></li>
       
       <li><a href="../inhoud.html"><img src="../a.inhoud.png" width="192" height="67" /></a></li>
       

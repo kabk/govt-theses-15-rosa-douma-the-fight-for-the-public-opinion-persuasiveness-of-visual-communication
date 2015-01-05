@@ -1,12 +1,14 @@
 @charset "UTF-8";
 body {
-	background-color: #FFFFFF;
+	background-color: #666666;
 	margin: 0;
 	padding: 0;
-	color: #333;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 80%;
-	line-height: normal;
+	color: #666;
+	font-family: 'Rajdhani', sans-serif;
+		font-size: 100%;
+	line-height: 1.4;
+	
+	
 }
 
 /* ~~ Element-/tagkiezers ~~ */
@@ -18,19 +20,6 @@ h1, h2, h3, h4, h5, h6, p {
 	margin-top: 0;	 /* als u de bovenmarge verwijdert, voorkomt u dat marges buiten de div vallen waartoe ze behoren. De resterende ondermarge zorgt ervoor dat er ruimte blijft tussen de div en alle volgende elementen. */
 	padding-right: 15px;
 	padding-left: 15px; /* als u opvulling toevoegt aan de zijkant van de elementen in de divs, in plaats van aan de divs zelf, voorkomt u dat u kadermodelberekeningen moet uitvoeren. U kunt als alternatief een geneste div met opvulling aan de zijkant gebruiken. */
-	font-size: x-small;
-	color: #333;
-	line-height: 1pt;
-	white-space: normal;
-	text-height: auto;
-	line-break: 7;
-	letter-spacing: normal;
-	text-align: left;
-	vertical-align: baseline;
-	word-spacing: normal;
-	word-break: normal;
-	alignment-baseline: central;
-	font-style: normal;
 }
 a img { /* met deze kiezer verwijdert u de blauwe standaardrand die in bepaalde browsers wordt weergeven rond een afbeelding als deze wordt omgeven door een koppeling */
 	border: none;
@@ -39,12 +28,7 @@ a img { /* met deze kiezer verwijdert u de blauwe standaardrand die in bepaalde 
 /* ~~ De stijl voor de koppelingen op uw site moet deze volgorde aanhouden, inclusief de groep kiezers waarmee het aanwijseffect wordt gemaakt. ~~ */
 a:link {
 	color: #42413C;
-	text-decoration: none; /* tenzij u zeer unieke opmaak toepast op uw koppelingen, kunt u de koppelingen het beste onderstrepen zodat ze gemakkelijk te herkennen zijn */
-	padding: 5px;
-	border-top-color: #FFF;
-	border-right-color: #FFF;
-	border-bottom-color: #FFF;
-	border-left-color: #FFF;
+	text-decoration: underline; /* tenzij u zeer unieke opmaak toepast op uw koppelingen, kunt u de koppelingen het beste onderstrepen zodat ze gemakkelijk te herkennen zijn */
 }
 a:visited {
 	color: #6E6C64;
@@ -56,15 +40,21 @@ a:hover, a:active, a:focus { /* met deze groep kiezers krijgen gebruikers die na
 
 /* ~~deze container met vaste breedte omvat de overige divs~~ */
 .container {
-	width: 960px;
+	width: 950px;
 	background-color: #FFF;
+	padding: 20pt;
+	
 	margin: 0 auto; /* de lay-out wordt gecentreerd via de combinatie van de automatische waarde voor de zijkanten en de breedte */
 }
 
 /* ~~ voor de koptekst wordt geen breedte ingesteld. De koptekst loopt over de volledige breedte van uw lay-out en bevat een tijdelijke aanduiding voor een afbeelding, die u moet vervangen door uw eigen gekoppelde logo ~~ */
 .header {
 	background-color: #FFFFFF;
+	
+	padding-bottom: 30px;
+
 }
+
 
 /* ~~ Dit zijn de kolommen voor de lay-out. ~~ 
 
@@ -79,18 +69,21 @@ a:hover, a:active, a:focus { /* met deze groep kiezers krijgen gebruikers die na
 */
 .sidebar1 {
 	float: left;
-	width: 220px;
+	width: 250px;
 	background-color: #FFFFFF;
-	padding-bottom: 0px;
+	padding-bottom: 10px;
+	border: none;
 }
 .content {
+
 	padding: 10px 0;
-	width: 740px;
+	padding-left: 40px;
+	padding-right: 40px;
+	
+	width: 620px;
 	float: left;
-	color: #333;
-	font-size: small;
-	font-style: normal;
-	line-height: normal;
+	border: none;
+	
 }
 
 /* ~~ De gegroepeerde kiezer zorgt voor de ruimte van de lijsten in het inhoudsgebied ~~ */
@@ -100,35 +93,23 @@ a:hover, a:active, a:focus { /* met deze groep kiezers krijgen gebruikers die na
 
 /* ~~ De stijlen voor navigatiebalken (kunnen worden verwijderd als u een voorgedefinieerd vlieguit-menu, bijvoorbeeld Spry, gebruikt) ~~ */
 ul.nav {
-	list-style: none; /* hiermee maakt u de bovenrand voor de koppelingen - de overige worden geplaatst via een onderrand op de LI */
+	list-style: none; /* hiermee verwijdert u de lijstmarkering */
+	
 	margin-bottom: 15px; /* hiermee stelt u de ruimte in tussen de navigatie en de inhoud eronder */
 }
 ul.nav li {
-	border-bottom: 1px solid #666; /* hiermee maakt u de scheiding voor knoppen */
+	
 }
 ul.nav a, ul.nav a:visited { /* als u deze kiezers groepeert, behouden de koppelingen het knopuiterlijk ook nadat erop de koppelingen is geklikt */
-	padding: 5px;
+	padding: 5px 5px 5px 15px;
 	display: block; /* hiermee krijgt de koppeling de blokeigenschappen, waardoor de koppeling de hele LI in het blok vult en het volledige gebied reageert op een muisklik. */
 	width: 200px;  /*met deze breedte kan op de volledige knop worden geklikt in Internet Explorer 6. Als u IE6 niet ondersteunt, kunt u dit verwijderen. U kunt de juiste breedte berekenen door de opvulling voor deze koppeling af te trekken van de breedte van de zijbalkcontainer. */
 	text-decoration: none;
 	background-color: #FFFFFF;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
 }
 ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* hiermee wijzigt u de achtergrond en tekstkleur van muis- en toetsenbordnavigatie */
-	background-color: #FFF;
+	background-color: #FFFFFF;
 	color: #FFF;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-	border-top-color: #FFF;
-	border-right-color: #FFF;
-	border-bottom-color: #FFF;
-	border-left-color: #FFF;
-	padding: 6px;
 }
 
 /* ~~ De voettekst ~~ */
@@ -137,7 +118,6 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* hiermee wijzigt u de achter
 	background-color: #FFFFFF;
 	position: relative;/* hiermee kan de eigenschap hasLayout voor IE6 op de juiste wijze worden gewist */
 	clear: both; /* met deze eigenschap voor wissen kan de container bepalen waar de zwevende kolommen eindigen en ze insluiten */
-	text-align: center;
 }
 
 /* ~ diverse klassen voor zweven/wissen ~~ */
@@ -154,4 +134,25 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* hiermee wijzigt u de achter
 	height:0;
 	font-size: 1px;
 	line-height: 0px;
+}
+.container .sidebar1 .nav li a {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.container .sidebar1 {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.container .sidebar1 .nav li a {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.container .content {
+	color: #666;
 }

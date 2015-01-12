@@ -56,18 +56,9 @@ body {
        
     </ul>
     <p>&nbsp;</p>
-  <!-- end .sidebar1 --></div>
-    
-    
-  <div class="content">
-    <p>&nbsp;</p>
-  <!-- TemplateBeginEditable name="bewerkbaargebied" -->bewerkbaargebied<!-- TemplateEndEditable --></div>
-  <div class="footer">
-    <div class="footer">
-      <p>&nbsp;</p>
-      <!-- end .footer -->
-    </div>
   </div>
+  <div class="content"><!-- TemplateBeginEditable name="bewerkbaargebied" -->bewerkbaargebied<!-- TemplateEndEditable --></div>
+  <div class="footer"></div>
   <!-- end .container --></div>
 </body>
 </html>

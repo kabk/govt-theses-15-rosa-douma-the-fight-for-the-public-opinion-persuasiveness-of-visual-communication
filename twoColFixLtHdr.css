@@ -163,5 +163,6 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* hiermee wijzigt u de achter
 	padding-bottom: 7px;
 }
 .container .content {
+	padding-top: 33px;
 	color: #666;
 }

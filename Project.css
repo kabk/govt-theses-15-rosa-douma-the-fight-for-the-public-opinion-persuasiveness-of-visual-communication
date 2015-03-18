@@ -1,0 +1,121 @@
+@charset "UTF-8";
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element-/tagkiezers ~~ */
+ul, ol, dl { /* Vanwege de verschillen tussen browsers kunt u het beste geen opvulling en marges gebruiken voor lijsten. Voor consistentie kunt u hier of bij de items (LI, DT, DD) voor de lijsten de gewenste waarden opgeven. Houd er rekening mee dat wat u hier doet, wordt gebruikt in de navigatielijst, tenzij u een specifiekere kiezer opgeeft. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* als u de bovenmarge verwijdert, voorkomt u dat marges buiten de div vallen waartoe ze behoren. De resterende ondermarge zorgt ervoor dat er ruimte blijft tussen de div en alle volgende elementen. */
+	padding-right: 15px;
+	padding-left: 15px; /* als u opvulling toevoegt aan de zijkant van de elementen in de divs, in plaats van aan de divs zelf, voorkomt u dat u kadermodelberekeningen moet uitvoeren. U kunt als alternatief een geneste div met opvulling aan de zijkant gebruiken. */
+}
+a img { /* met deze kiezer verwijdert u de blauwe standaardrand die in bepaalde browsers wordt weergeven rond een afbeelding als deze wordt omgeven door een koppeling */
+	border: none;
+}
+
+/* ~~ De stijl voor de koppelingen op uw site moet deze volgorde aanhouden, inclusief de groep kiezers waarmee het aanwijseffect wordt gemaakt. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* tenzij u zeer unieke opmaak toepast op uw koppelingen, kunt u de koppelingen het beste onderstrepen zodat ze gemakkelijk te herkennen zijn */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* met deze groep kiezers krijgen gebruikers die navigeren met een toetsenbord, dezelfde aanwijsfunctionaliteit als gebruikers die werken met een muis. */
+	text-decoration: none;
+}
+
+/* ~~deze container met vaste breedte omvat de overige divs~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* de lay-out wordt gecentreerd via de combinatie van de automatische waarde voor de zijkanten en de breedte */
+}
+
+/* ~~ voor de koptekst wordt geen breedte ingesteld. De koptekst loopt over de volledige breedte van uw lay-out en bevat een tijdelijke aanduiding voor een afbeelding, die u moet vervangen door uw eigen gekoppelde logo ~~ */
+.header {
+	background-color: #ADB96E;
+}
+
+/* ~~ Dit zijn de kolommen voor de lay-out. ~~ 
+
+1) Opvulling wordt alleen boven en/of onder aan de divs geplaatst. De elementen binnen deze divs hebben opvulling aan de zijkanten. Hierdoor hoeft u geen kadermodelberekeningen uit te voeren. Houd er rekening mee dat als u opvulling aan de zijkant of een rand aan de div toevoegt, deze opvulling wordt toegevoegd aan de waarde die u definieert voor de totale breedte. U kunt ook de opvulling voor een element in de div verwijderen en in de div een tweede div invoegen die geen breedte heeft, maar wel de benodigde opvulling voor uw ontwerp bevat.
+
+2) Er is geen marge ingesteld voor de kolommen omdat deze allemaal zwevend zijn. Als u marge moet toevoegen, moet u dit niet doen aan de kant waarnaar de kolom zweeft (bijvoorbeeld een rechtermarge voor een div die is ingesteld op zweven naar rechts). Vaak kunt u hiervoor opvulling gebruiken. Bij divs waarvoor u deze regel niet kunt toepassen, moet u een declaratie ‘display:inline’ toevoegen aan de regel van de div om een fout op te lossen waarbij in sommige versies van Internet Explorer de marge wordt verdubbeld.
+
+3) Omdat klassen meerdere keren kunnen worden gebruikt in een document en meerdere klassen kunnen worden toegepast op een element, zijn aan de kolommen klassenamen toegewezen in plaats van id's. U kunt bijvoorbeeld zo nodig twee zijbalk-divs stapelen. Desgewenst kunt u deze eenvoudig wijzigen in id’s, zolang u maar ervoor zorgt dat u ze één keer per document gebruikt.
+
+4) Indien gewenst kunt u de navigatie aan rechterkant plaatsen in plaats van aan de linkerkant. Hiervoor hoeft u alleen de kolommen in tegenovergestelde richting te laten zweven (allemaal naar rechts in plaats van naar links), waarna ze in omgekeerde volgorde worden weergegeven. U hoeft de divs niet te verplaatsen in de HTML-broncode.
+
+*/
+.sidebar1 {
+	float: left;
+	width: 220px;
+	background-color: #EADCAE;
+	padding-bottom: 10px;
+}
+.content {
+
+	padding: 10px 0;
+	width: 740px;
+	float: left;
+}
+
+/* ~~ De gegroepeerde kiezer zorgt voor de ruimte van de lijsten in het inhoudsgebied ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* deze opvulling is gespiegeld aan de rechteropvulling in de voorgaande regel voor koppen en alinea’s. De opvulling is onderaan geplaatst zodat er ruimte ontstaat tussen overige elementen in de lijsten en is aan de linkerkant geplaatst om de inspringing te maken. Deze opvulling kunt u naar wens aanpassen. */
+}
+
+/* ~~ De stijlen voor navigatiebalken (kunnen worden verwijderd als u een voorgedefinieerd vlieguit-menu, bijvoorbeeld Spry, gebruikt) ~~ */
+ul.nav {
+	list-style: none; /* hiermee verwijdert u de lijstmarkering */
+	border-top: 1px solid #666; /* hiermee maakt u de bovenrand voor de koppelingen - de overige worden geplaatst via een onderrand op de LI */
+	margin-bottom: 15px; /* hiermee stelt u de ruimte in tussen de navigatie en de inhoud eronder */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* hiermee maakt u de scheiding voor knoppen */
+}
+ul.nav a, ul.nav a:visited { /* als u deze kiezers groepeert, behouden de koppelingen het knopuiterlijk ook nadat erop de koppelingen is geklikt */
+	padding: 5px 5px 5px 15px;
+	display: block; /* hiermee krijgt de koppeling de blokeigenschappen, waardoor de koppeling de hele LI in het blok vult en het volledige gebied reageert op een muisklik. */
+	width: 200px;  /*met deze breedte kan op de volledige knop worden geklikt in Internet Explorer 6. Als u IE6 niet ondersteunt, kunt u dit verwijderen. U kunt de juiste breedte berekenen door de opvulling voor deze koppeling af te trekken van de breedte van de zijbalkcontainer. */
+	text-decoration: none;
+	background-color: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* hiermee wijzigt u de achtergrond en tekstkleur van muis- en toetsenbordnavigatie */
+	background-color: #ADB96E;
+	color: #FFF;
+}
+
+/* ~~ De voettekst ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #CCC49F;
+	position: relative;/* hiermee kan de eigenschap hasLayout voor IE6 op de juiste wijze worden gewist */
+	clear: both; /* met deze eigenschap voor wissen kan de container bepalen waar de zwevende kolommen eindigen en ze insluiten */
+}
+
+/* ~ diverse klassen voor zweven/wissen ~~ */
+.fltrt {  /* met deze klasse kunt u een element aan de rechterkant van uw pagina laten zweven. Het zwevende element moet voorafgaan aan het element waarnaast het op de pagina staat. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* met deze klasse kunt u een element aan de linkerkant van uw pagina laten zweven. Het zwevende element moet voorafgaan aan het element waarnaast het op de pagina staat. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* deze klasse kunt u gebruiken voor een <br /> of een lege div als het laatste element dat volgt op de laatste zwevende div (binnen de container) wanneer de voettekst uit de container is verwijderd of er buiten is geplaatst */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}

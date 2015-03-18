@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<link href='http://fonts.googleapis.com/css?family=Rajdhani:500,600' rel='stylesheet' type='text/css'>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Naamloos document</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../twoColFixLtHdr.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body {
+	margin-left: 5px;
+	margin-top: 6px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="../Potlood.jpg" alt="Logo hier invoegen" name="Thesis" width="836" height="71" id="Thesis" style="background-color: #FFFFFF; display: block;" /></a> 
+    <!-- end .header --></div>
+  <div class="sidebar1">
+    <ul class="nav">
+     <li></li>
+     <li> <p></p></li>
+     <li></li>
+     <li></li>
+      
+      <li><a href="../index.html"><img src="../home.jpg" width="188" height="47" /></a>
+      </li>
+      <li><a href="../index.html"><img src="../results.jpg" width="188" height="47" /></a></li>
+      <li></li>
+      
+    
+      <li><a href="../index.html"><img src="../thesis.jpg" width="188" height="47" /></a></li>
+      <li><a href="../index.html"><img src="../printables.jpg" width="188" height="47" /></a></li>
+      
+      <li></li>
+      
+      <li></li>
+      
+       <li></li>
+       
+       <li></li>
+       <li></li>
+      <li></li>
+       <li></li>
+       
+    </ul>
+    <p>&nbsp;</p>
+  </div>
+  <div class="content"><!-- TemplateBeginEditable name="bewerkbaargebied" -->bewerkbaargebied<!-- TemplateEndEditable --></div>
+  <div class="footer"></div>
+  <!-- end .container --></div>
+</body>
+</html>

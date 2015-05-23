@@ -1,14 +1,12 @@
 @charset "UTF-8";
 body {
-	background-color: #666666;
+	background-color: #FFFFFF;
 	margin: 0;
 	padding: 0;
 	color: #666;
 	font-family: 'Rajdhani', sans-serif;
-		font-size: 100%;
+	font-size: 100%;
 	line-height: 1.4;
-	
-	
 }
 
 /* ~~ Element-/tagkiezers ~~ */
@@ -72,7 +70,7 @@ a:hover, a:active, a:focus { /* met deze groep kiezers krijgen gebruikers die na
 	width: 180px;
 	background-color: #FFFFFF;
 	padding-bottom: 10px;
-	padding-left: 95px;
+	padding-left: 70px;
 	padding-top: 9px;
 	border: none;
 }
